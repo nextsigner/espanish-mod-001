@@ -30,8 +30,8 @@ Item {
             BotonUX{
                 id: botDelSil
                 text: '-'
-                c1:app.c2
-                c2:app.c3
+                fontColor: app.c2
+                backgroudColor: app.c3
                 speed: 100
                 clip: false
                 onClick: {
@@ -50,8 +50,8 @@ Item {
             BotonUX{
                 id: botSetMsSil
                 text: '+'
-                c1:app.c2
-                c2:app.c3
+                fontColor: app.c2
+                backgroudColor: app.c3
                 speed: 100
                 clip: false
                 onClick: {
@@ -86,8 +86,8 @@ Item {
                     BotonUX{
                         anchors.centerIn: parent
                         text: modelData
-                        c1:parseInt(app.jsonSilabas[modelData][0])===-1?'red':app.c2
-                        c2:parseInt(app.jsonSilabas[modelData][0])===-1?'yellow':app.c3
+                        fontColor: parseInt(app.jsonSilabas[modelData][0])===-1?'red':app.c2
+                        backgroudColor: parseInt(app.jsonSilabas[modelData][0])===-1?'yellow':app.c3
                         speed: 250
                         clip: false
                         onClick: {
@@ -206,8 +206,8 @@ Item {
     BotonUX{
         id: botPlay
         text: 'Hablar'
-        c1:app.c2
-        c2:app.c3
+        fontColor: app.c2
+        backgroudColor: app.c3
         speed: 100
         clip: false
         onClick: {
