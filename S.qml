@@ -148,8 +148,8 @@ Item {
                         }
                         Component.onCompleted: {
                             if((''+modelData).indexOf('!')>0){
-                                c1='red'
-                                c2='yellow'
+                                backgroudColor='red'
+                                fontColor='yellow'
                                 parent.visible=false
                             }
                         }
